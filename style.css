@@ -1,103 +1,112 @@
-/* style.css */
-
 /* Reset styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Global styles */
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 32px;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  nav ul li a:hover {
-    color: #f4b400;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .name-and-links {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  
-  .name-and-links h1 {
-    margin: 0 0 10px 0;
-    text-align: left;
-  }
-  
-  .name-and-links nav ul {
-    display: flex; /* Change to flex */
-    align-items: center;
-  }
-  
-  .name-and-links nav ul li {
-    margin-right: 10px; /* Add margin-right */
-  }
-  
-  .social-icons {
-    display: flex;
-    align-items: center;
-  }
-  
-  .social-icons a {
-    color: #fff;
-    font-size: 24px;
-    margin-left: 10px;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .social-icons a:hover {
-    color: #f4b400;
-  }
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding-top: 80px; /* Account for the fixed header */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Add display flex */
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #f4b400;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-and-links {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.name-and-links h1 {
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+.name-and-links nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.name-and-links nav ul li {
+  margin-right: 10px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #f4b400;
+}
+
+/* Additional styles */
+.content {
+  margin-top: 80px;
+}
   
   
   /* Main Content styles */
@@ -107,10 +116,11 @@
   
   /* Welcome Section styles */
   #welcome-section {
+    scroll-margin-top: 100px;
     background-color: #f4b400;
     color: #fff;
     text-align: center;
-    padding: 60px 0;
+    padding: 100px 0;
     border-radius: 10px;
   }
   
@@ -126,6 +136,7 @@
   
   /* Projects Section styles */
   #projects-section {
+    scroll-margin-top: 140px;
     background-color: #fff;
     padding: 40px 0;
   }
@@ -162,6 +173,7 @@
   
   /* About Section styles */
   #about-section {
+    scroll-margin-top: 100px;
     background-color: #f4b400;
     color: #fff;
     padding: 60px 0;
@@ -199,6 +211,7 @@
   
   /* Resume Section styles */
   #resume-section {
+    scroll-margin-top: 140px;
     background-color: #fff;
     padding: 60px 0;
     border-radius: 10px;

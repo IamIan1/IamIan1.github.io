@@ -333,3 +333,16 @@ body {
   flex-grow: 1;
 }
 
+@media (min-width: 768px) {
+  .project-details {
+    flex-direction: row;
+  }
+
+  .project-details img {
+    margin-right: 40px;
+  }
+
+  .project-info {
+    padding: 0;
+  }
+}

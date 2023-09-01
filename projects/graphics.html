@@ -42,21 +42,49 @@
       <div class="container">
         <h2>Computer Graphics</h2>
         <div class="project-details">
-          <img src="/images/BallAndEllipsoid.png" alt="Project 2" style="width: 50%;">
+          <!-- Container for the two images -->
+          <div class="image-container">
+            <img src="/images/RelfectiveScene.png" alt="Project 2 - Ray Tracer" style="width: 100%;">
+            <img src="/images/BallAndEllipsoid.png" alt="Project 2" style="width: 100%;">
+          </div>
           <div class="project-info">
             <h3>Project Description</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus cursus libero, at gravida ipsum fermentum ut. Donec ut sem massa. Suspendisse at efficitur elit. Integer at pharetra elit.</p>
+            <p>
+              In this computer graphics project, I developed a Static Ray Tracer using C++ that not only featured multiple light sources, shadows, and complex scene rendering but also introduced support for reflective objects. This project showcased my proficiency in ray tracing and my ability to handle intricate lighting interactions and material properties, including reflections.
+            </p>
+            <h3>Key Achievements and Contributions:</h3>
+            <p>
+              Comprehensive Ray Tracing Engine: I engineered a comprehensive ray tracing engine that handled ray-object intersections, multi-light source illumination, shadows, and reflections. This robust engine formed the foundation for rendering complex and visually captivating scenes.
+            </p><p>
+              Multiple Light Sources: The ray tracer seamlessly integrated multiple light sources, allowing for the accurate computation of lighting contributions from each source. This enhanced the realism of the rendered scenes.
+            </p><p>
+              Realistic Shadows: I implemented precise shadow casting by employing shadow rays to determine whether objects were occluded from the perspective of each light source. This ensured lifelike and accurate shadow effects.
+            </p><p>
+              Reflective Objects: The project introduced support for reflective materials, enabling objects to interact with their surroundings by reflecting light rays. This feature added depth and complexity to the rendered scenes, showcasing mirrored surfaces and intricate light interactions.</p>
             <h3>Technologies Used</h3>
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
+              <li>C++</li>
             </ul>
             <a href="/index.html" class="btn">Visit Website</a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- CSS to control the layout -->
+    <style>
+      .image-container {
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        align-items: flex-start; /* Align images to the left */
+        width: 50%; /* Adjust this width as needed */
+        margin-right: 20px; /* Add some spacing between images and project info */
+      }
+      .project-info {
+        width: 50%; /* Adjust this width as needed */
+      }
+    </style>
+
   </main>
 
   <!-- Footer -->

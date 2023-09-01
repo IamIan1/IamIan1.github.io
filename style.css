@@ -346,3 +346,17 @@ body {
     padding: 0;
   }
 }
+
+<!-- CSS to control the layout -->
+<style>
+  .image-container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: flex-start; /* Align images to the left */
+    width: 50%; /* Adjust this width as needed */
+    margin-right: 20px; /* Add some spacing between images and project info */
+  }
+  .project-info {
+    width: 50%; /* Adjust this width as needed */
+  }
+</style>

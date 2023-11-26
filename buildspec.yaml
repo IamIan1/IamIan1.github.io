@@ -7,7 +7,7 @@ phases:
 
   post_build:
     commands:
-      - aws s3 sync ./ s3://your-s3-bucket-name/ --exclude "*" --include "index.html" --include "projects/*.html" --cache-control "max-age=60"
+      - aws s3 sync ./ s3://cs412isabolik.xyz/ --exclude "*" --include "index.html" --include "projects/*.html" --cache-control "max-age=60"
 
 artifacts:
   files: '**/*'

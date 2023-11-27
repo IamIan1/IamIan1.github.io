@@ -5,10 +5,5 @@ phases:
     commands:
       - echo "Build phase - nothing to do for a static website"
 
-  post_build:
-    commands:
-      - aws s3 cp ./index.html s3://cs412isabolik.xyz/ --metadata "x-amz-meta-cache-control=max-age=60"
-      - aws s3 cp ./projects/ s3://cs412isabolik.xyz/projects/ --recursive --exclude "*" --include "*.html" --metadata "x-amz-meta-cache-control=max-age=60"
-
 artifacts:
   files: '**/*'

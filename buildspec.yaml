@@ -1,10 +1,6 @@
 version: 0.2
 
 phases:
-  build:
-    commands:
-      - echo "Build phase - nothing to do for a static website"
-
   post_build:
     commands:
       - aws cloudfront create-invalidation --distribution-id EM3YHELT6V6LA --paths "/*"

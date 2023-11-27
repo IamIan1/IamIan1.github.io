@@ -7,9 +7,9 @@ phases:
 
   post_build:
     commands:
-      - aws s3 sync ./ s3://cs412isabolik.xyz/ --exclude "*" --include "*.html" --cache-control "max-age=60"
-      - aws s3 sync ./projects/ s3://cs412isabolik.xyz/projects/ --exclude "*" --include "*.html" --cache-control "max-age=60"
+      - aws s3 sync ./ s3://cs412isabolik.xyz/ --exclude "*" --include "*.html" --cache-control "max-age=60" --metadata-directive REPLACE
+      - aws s3 sync ./projects/ s3://cs412isabolik.xyz/projects/ --exclude "*" --include "*.html" --cache-control "max-age=60" --metadata-directive REPLACE
 
-      # - aws cloudfront create-invalidation --distribution-id EM3YHELT6V6LA --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id EM3YHELT6V6LA --paths "/*"
 artifacts:
   files: '**/*'

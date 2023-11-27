@@ -7,8 +7,8 @@ phases:
 
   post_build:
     commands:
-      - aws s3 cp ./index.html s3://cs412isabolik.xyz/ --metadata '{"Cache-Control":"max-age=60"}'
-      - aws s3 cp ./projects/ s3://cs412isabolik.xyz/projects/ --recursive --exclude "*" --include "*.html" --metadata '{"Cache-Control":"max-age=60"}'
+      - aws s3 cp ./index.html s3://cs412isabolik.xyz/ --metadata "x-amz-meta-cache-control=max-age=60"
+      - aws s3 cp ./projects/ s3://cs412isabolik.xyz/projects/ --recursive --exclude "*" --include "*.html" --metadata "x-amz-meta-cache-control=max-age=60"
 
 artifacts:
   files: '**/*'

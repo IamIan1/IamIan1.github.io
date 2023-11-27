@@ -7,8 +7,8 @@ phases:
 
   post_build:
     commands:
-      - aws s3 sync ./index.html s3://cs412isabolik.xyz/ --cache-control "max-age=60"
-      - aws s3 sync ./projects/ s3://cs412isabolik.xyz/projects/ --recursive --exclude "*" --include "*.html" --cache-control "max-age=60" 
-      - aws cloudfront create-invalidation --distribution-id EM3YHELT6V6LA --paths "/*"
+      - aws s3 sync . s3://cs412isabolik.xyz/ --cache-control "max-age=60"
+      - aws s3 sync ./projects/ s3://cs412isabolik.xyz/projects/ --recursive --include "*.html" --cache-control "max-age=60"
+      # - aws cloudfront create-invalidation --distribution-id EM3YHELT6V6LA --paths "/*"
 artifacts:
   files: '**/*'

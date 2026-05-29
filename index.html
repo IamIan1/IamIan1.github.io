@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
   <title>Ian Sabolik - Portfolio</title>
 </head>
 
@@ -28,10 +28,10 @@
           <h1>Ian Sabolik</h1>
           <nav>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/#projects-section">Projects</a></li>
-              <li><a href="/#about-section">About</a></li>
-              <li><a href="/#resume-section">Resume</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#projects-section">Projects</a></li>
+              <li><a href="index.html#about-section">About</a></li>
+              <li><a href="index.html#resume-section">Resume</a></li>
             </ul>
           </nav>
         </div>
@@ -54,18 +54,18 @@
       <div class="container">
         <h2>Welcome to My Portfolio!</h2>
         <p> 
-          Currently pursuing my computer science degree at Texas A&M University, 
-          I have honed my skills in various programming languages, 
-          including C++, Python, and more. My approach to every project 
+          Software Developer at Paycom, with a BS in Computer Science from Texas A&M University.
+          I have honed my skills in various programming languages and frameworks, 
+          including C++, Python, JavaScript, React, and PHP. My approach to every project 
           is characterized by a blend of precision and creativity, 
           enabling me to deliver exceptional results. With an unwavering 
-          passion for problem-solving, I actively contribute as an 
-          undergraduate research assistant, seeking opportunities to make a meaningful impact
+          passion for problem-solving, I bring nearly two years of professional
+          experience delivering full-stack solutions, and I seek opportunities to make a meaningful impact
           and learn wherever and whatever I can.
         </p>
         <a href="#projects-section" class="btn">View My Projects</a>
         <p> 
-            Skills: C++, Python, Algorithm Design and Analysis, Object-Oriented Programming, Version Control, Data Structures, Database Management, Web Development, Problem Solving and Debugging, Collaboration and Teamwork, Technical Documentation
+            Skills: C++, Python, JavaScript, TypeScript, PHP, C#, SQL, React.js, PyTorch, TensorFlow, AWS, Docker, Git, GitHub, Agile, Scrum, CI/CD, Test-Driven Development, Problem-Solving, Leadership, Communication, Teamwork
         </p>
       </div>
     </section>
@@ -74,29 +74,41 @@
     <section id="projects-section">
       <div class="container">
         <h2>My Projects</h2>
-        <div class="project">
+        <div class="project project-archived">
+          <span class="archived-label">ARCHIVED</span>
+          <div class="project-image-wrapper">
           <img src="images/PiMemo_pie.png" alt="Project 4" style="width:200px;">
+          </div>
           <h3>PiMemorizer</h3>
           <p> [October 2023] Built an app to help myself memorize the digits of pi. (I know over 150 digits now!)</p>
           <a href="projects/PiMemo.html" class="btn">View Details</a>
         </div>
 
-        <div class="project">
+        <div class="project project-archived">
+          <span class="archived-label">ARCHIVED</span>
+          <div class="project-image-wrapper">
           <img src="images/BoXHED_small.png" alt="Project 1" style="width:200px;">
+          </div>
           <h3>BoXHED2.0 - Undergraduate Research Assistant</h3>
           <p> [June 2023 - August 2023] Developed preprocessing code in R for this machine learning process.</p>
           <a href="projects/BoXHED.html" class="btn">View Details</a>
         </div>
 
-        <div class="project">
+        <div class="project project-archived">
+          <span class="archived-label">ARCHIVED</span>
+          <div class="project-image-wrapper">
           <img src="images/move_tx.jpg" alt="Project 2">
+          </div>
           <h3>MOVE Texas A&M - Software Engineer</h3>
           <p> [January 2023 - May 2023] Designed and developed a web app for the MOVE Texas A&M student organization.</p>
           <a href="projects/MOVETX.html" class="btn">View Details</a>
         </div>
 
-        <div class="project">
+        <div class="project project-archived">
+          <span class="archived-label">ARCHIVED</span>
+          <div class="project-image-wrapper">
           <img src="images\RelfectiveScene.png" alt="Project 3" style="width: 200px;">
+          </div>
           <h3>Computer Graphics</h3>
           <p> [August 2023 - May 2023] Implemented a ray-tracer from scratch using C++, among other graphics-related projects.</p>
           <a href="projects/graphics.html" class="btn">View Details</a>
@@ -111,12 +123,14 @@
             <div class="about-text">
             <h2>About Me</h2>
             <p>I am a software engineer with a passion for creating. 
+              I graduated from Texas A&M University in May 2024 with a BS in Computer Science, and I am now working as a Software Developer at Paycom,
+              where I build full-stack features for client-facing payroll systems using PHP, JavaScript, and React.
               I strive to stay updated with the latest technologies 
               and continuously enhance my skills. My main goal in life 
               is to develop meaningful technologies that help people live 
-              happier lives. To achieve this, I pursued a degree in Computer Science, 
+              happier lives. To achieve this, I pursued a degree in Computer Science with minors in Cybersecurity and Mathematics, 
               equipping myself with the necessary knowledge. Now, I'm actively 
-              seeking a specific avenue to bring my goal to fruition. 
+              seeking to bring my goal to fruition through impactful work. 
               Recently, I've witnessed firsthand the immense potential of 
               AI and machine learning to improve people's lives, 
               and I firmly believe that, when developed responsibly, 
@@ -139,7 +153,7 @@
       <div class="container">
         <h2>Resume</h2>
         <p>Download my resume to learn more about my qualifications and experience.</p>
-        <a href="/documents/Ian_Sabolik_Resume.pdf" class="btn">Download Resume</a>
+        <a href="documents/Ian_Sabolik_Resume.pdf" class="btn">Download Resume</a>
       </div>
     </section>
   </main>
@@ -147,7 +161,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 Ian Sabolik</p>
+      <p>&copy; 2026 Ian Sabolik</p>
     </div>
   </footer>
 

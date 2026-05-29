@@ -347,13 +347,41 @@ body {
   }
 }
 
+.project-image-wrapper img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* Archived project banner */
+.project-banner {
+  background-color: #7a7a7a;
+  color: #fff;
+  text-align: center;
+  padding: 6px 16px;
+  font-size: 14px;
+}
+
+/* Archived project card on index */
+.project-archived .project-image-wrapper img {
+  filter: grayscale(100%);
+}
+
+.project-archived .archived-label {
+  font-size: 12px;
+  color: #888;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 4px;
+}
+
 .image-container {
   display: flex;
-  flex-direction: column; /* Stack images vertically */
-  align-items: flex-start; /* Align images to the left */
-  width: 50%; /* Adjust this width as needed */
-  margin-right: 20px; /* Add some spacing between images and project info */
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin-right: 20px;
 }
 .project-info {
-  width: 50%; /* Adjust this width as needed */
+  width: 50%;
 }

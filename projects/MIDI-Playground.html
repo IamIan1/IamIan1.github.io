@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+  <title>MIDI Playground | Ian Sabolik</title>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPDV5B14FL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPDV5B14FL');
+</script>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="name-and-links">
+          <h1>Ian Sabolik</h1>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#projects-section">Projects</a></li>
+              <li><a href="../index.html#about-section">About</a></li>
+              <li><a href="../index.html#resume-section">Resume</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/IamIan1" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ian-sabolik" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Project Details Section -->
+    <section id="project-details-section">
+      <div class="container">
+        <h2>MIDI Playground</h2>
+        <div class="project-details">
+          <img src="../images/PianoPlayground.ico" alt="MIDI Playground Image" style="width: 50%;">
+          <div class="project-info">
+            <h3>Project Description</h3>
+            <p>
+              MIDI Playground is a browser-based MIDI recording and playback studio featuring a modern dark theme UI.
+              It allows users to record MIDI input from any connected controller via the Web MIDI API, play
+              polyphonic tones using Tone.js, and export recordings as standard Format 0 .mid files.
+            </p>
+            <p>
+              The project avoids all external MIDI libraries entirely. MIDI files are written from scratch using
+              hand-crafted binary formatting with custom VLQ encoding, and exported .mid files are parsed
+              byte-by-byte during playback — translating raw MIDI data back into Tone.js scheduling triggers.
+              Features include track arm, instrument selection (polyphonic synth or Salamander piano sampler),
+              playlist management, and export to downloadable MIDI files.
+            </p>
+
+            <h3>Technologies Used</h3>
+            <ul>
+              <li>JavaScript (ES2020+)</li>
+              <li>HTML / CSS</li>
+              <li>Tone.js (audio synthesis only)</li>
+              <li>Web MIDI API</li>
+              <li>Web Audio API</li>
+            </ul>
+            <a href="https://github.com/IamIan1/MIDI-Playground" class="btn" target="_blank">Visit GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Ian Sabolik</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

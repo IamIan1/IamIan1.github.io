@@ -362,7 +362,7 @@ body {
 }
 
 /* Archived project card on index */
-.project-archived .project-image-wrapper img {
+.project-archived {
   filter: grayscale(100%);
 }
 
